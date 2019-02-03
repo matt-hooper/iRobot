@@ -17,7 +17,7 @@ namespace iRobot
 
             Console.WriteLine("");
             Console.WriteLine("Add another robot and replay commands");
-            IRobot irobot2 = new Robot("Rebecca");
+            var irobot2 = new Robot("Rebecca");
             irobot1.ReplayCommands(irobot2);
         }
     }
