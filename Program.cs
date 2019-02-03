@@ -8,7 +8,7 @@ namespace iRobot
         {
             Console.WriteLine("Welcome to IRobot!");
 
-            IRobot irobot1 = new Robot("Robbie");
+            var irobot1 = new Robot("Robbie");
             irobot1.Beep(1, 10);
             irobot1.MoveForward(2);
             irobot1.Rotate(90);
