@@ -8,7 +8,7 @@ namespace iRobot
         {
             Console.WriteLine("Welcome to IRobot!");
 
-            RobotLogger irobot1 = new RobotLogger(new Robot("Robbie"));
+            var irobot1 = new RobotLogger(new Robot("Robbie"));
             irobot1.Beep(1, 10);
             irobot1.MoveForward(2);
             irobot1.Rotate(90);
@@ -17,7 +17,7 @@ namespace iRobot
 
             Console.WriteLine("");
             Console.WriteLine("Add another robot and replay commands");
-            IRobot irobot2 = new Robot("Rebecca");
+            var irobot2 = new Robot("Rebecca");
             irobot1.ReplayCommands(irobot2);
         }
     }
