@@ -1,9 +1,9 @@
 namespace iRobot
 {
     public interface IRobot {
-        void MoveForward(int steps);
-        void Rotate(float angle);
+        void MoveForward(int numberOfSteps);
+        void Rotate(double angle);
 
-        void Beep(int noOfBeeps, int volume);
+        void Beep(int numberOfBeeps , double volume);
     }
 }

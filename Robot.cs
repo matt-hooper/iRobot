@@ -11,17 +11,17 @@ namespace iRobot
             _name = name;
         }
 
-        public void Beep(int noOfBeeps, int volume)
+        public void Beep(int numberOfBeeps , double volume)
         {
-            Console.WriteLine($"Robot: {_name}. Beep at volume {volume}, {noOfBeeps} time{(noOfBeeps == 1 ? "" : "s")}.");
+            Console.WriteLine($"Robot: {_name}. Beep at volume {volume}, {numberOfBeeps} time{(numberOfBeeps == 1 ? "" : "s")}.");
         }
 
-        public void MoveForward(int steps)
+        public void MoveForward(int numberOfSteps )
         {
-            Console.WriteLine($"Robot: {_name}. Move Forward {steps} step{(steps == 1 ? "" : "s")}.");
+            Console.WriteLine($"Robot: {_name}. Move Forward {numberOfSteps } step{(numberOfSteps  == 1 ? "" : "s")}.");
         }
 
-        public void Rotate(float angle)
+        public void Rotate(double angle)
         {
             Console.WriteLine($"Robot: {_name}. Rotate {angle} degree{(angle == 1 ? "" : "s")}.");
         }
